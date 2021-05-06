@@ -1,0 +1,225 @@
+1)
+console.log(!10) // false
+console.log(!!"String") // true
+console.log(!!2.3) // true 
+console.log(Boolean(null)) // false
+2)
+console.log(10 > 2) // true
+console.log(5 >= "5") // true
+console.log("apple" > "pineapple") // false
+console.log("2" > "12") // true
+console.log(undefined == null) // true
+console.log(undefined === null) // false
+console.log(null == "\n0\n") // false 
+console.log(null === +"\n0\n") // false
+
+3)
+let numero = Number(prompt("insira o numero"))
+if (numero > 10){
+console.log("o valor é maior que 10")
+
+     }
+console.log('programa finalizado')
+
+4) let numero = Number(prompt("escreva um numero"))
+if (numero % 2 == 0 ){
+         console.log(numero/ 2)
+    }
+console.log("programa finalizado")
+5)
+let numero = Number(prompt("digite um numero"))
+ if (numero % 2 === 0){
+ console.log("o numero é par")
+} else {
+ console.log("o numero e impar")
+     }  
+
+  6)
+  let numero = Number(prompt("digite um numero"))
+if (numero >20 &&  numero < 90 ) {
+console.log("O número está na faixa entre 20 e 90")
+
+ } else {console.log("o numero esta fora da faixa")}
+
+ 7)
+ Boolean(A > 10 && B <= 20) // false
+Boolean(A > 10 || B <= 20) // true
+Boolean((A === 10 || B > 20) && B === 20) // true
+console.log(null || 2 || undefined) // 2 undefined
+Boolean(0 && 1) //   false
+
+ 8)
+let a =  prompt("insira o valor de a")
+     let b =  prompt('insira o valor de b')
+     let c = prompt("insira o valor de c")
+     if (a > b && a > c)   {
+      console.log(`o maior numero e ${a}`) 
+     }  else if (b > a && b > c) { console.log(`o maior numero e ${b}`) }
+        else {console.log(`o maior numero e ${c}`)}
+
+9) 
+let a = Number(prompt("digite o valor de a"))
+let b = Number(prompt("digite o valor de b")) 
+ a + b < 4 ? console.log("abaixo") : console.log("acima")
+
+ 10)
+ let a = Number(prompt("insira o valor do lado a"))
+let b = Number(prompt("insira o valor do lado b"))
+let c = Number(prompt("insira o valor do lado c"))
+if (a === b && a === c) {
+ console.log(" e um triangulo equilatero")
+}
+else if (a === b ||a === c) {
+console.log(" e um triangulo isosceles")
+}
+else {console.log("e um triangulo escaleno")}
+
+11)let a = Number(prompt("insira o numero"))
+if ( a >= 0) {
+ console.log( Math.sqrt(a))
+} else {
+console.log("o numero e invalido")
+    }
+ 
+ 12)
+let number = Number(prompt("insira um numero"))
+if (number % 5 == 0 ) {
+console.log("o numero e divisivel por 5")
+} else{console.log("o numero e invalido")}
+
+13)
+let number = Number(prompt("insira um numero"))
+if (number >= 0) {
+console.log(Math.sqrt(number))
+} else{console.log(number * number)}
+
+14)
+let number = Number(prompt("insira o salario "))
+let prestacao = Number(prompt("valor da prestacao"))
+if (prestacao > (number * 0.2)) {
+console.log("emprstimo nao consedido")
+} else{console.log("emprestimo consedido")}
+
+15)
+let a = Number(prompt("insira o resultado do primeiro time "))
+let b = Number(prompt("insira o resultado do segundo time "))
+if (a > b ) {
+    console.log("vitoria do primeiro time")
+}
+else if(a < b ) { 
+ console.log("vitoria do segundo time")
+}
+ else {
+  console.log("empate dos times")
+ }
+
+ 16)
+let idade = Number(prompt("insira a idade "))
+if (idade < 16) {
+    console.log("nao pode votar")
+}
+else if (idade >= 16 &&  idade < 18 || idade > 70){
+console.log("voto opcional")
+ }
+else { console.log("voto obrigatorio")
+ }
+
+ 17)
+ let a = Number(prompt("insira o primeiro numero"))
+let b = Number(prompt("insira o segundo numer"))
+let c = Number(prompt("insira o terceiro numero"))
+let d = [a,b,c]
+d.sort(function(a,b) {return b - a})
+ console.log(d)
+
+ 18)
+ let dia = Number(prompt("insira o numero do dia da semana"))
+ switch(dia){
+     case 1 :
+      console.log("domingo")
+    break;
+     case 2 :
+     console.log("segunda")
+    break;
+      case 3 :
+     console.log("terca")
+    break;
+      case 4 :
+     console.log("quarta")
+    break;
+      case 5 :
+     console.log("quinta")
+    break;
+      case 6 :
+     console.log("sexta")
+    break;
+    case 7 :
+         console.log("sabado")
+    break;
+    default: 
+    console.log("dia invalido")
+ }
+ 19)let a = Number(prompt("insira sua idade"))
+ if (a < 18 || a > 67){
+ console.log("voce nao pode doar sangue")
+ }
+ else{console.log("voce pode doar sangue")}
+
+ 20)
+ let dia = Number(prompt("insira o numero do mes"))
+ switch(dia){
+     case 1 :
+      console.log("janeiro")
+    break;
+     case 2 :
+     console.log("fevereiro")
+    break;
+      case 3 :
+     console.log("marco")
+    break;
+      case 4 :
+     console.log("abril")
+    break;
+      case 5 :
+     console.log("maio")
+    break;
+      case 6 :
+     console.log("junho")
+    break;
+      case 7 :
+         console.log("julho")
+    break;
+      case 8 :
+         console.log("agosto")
+    break;
+      case 9 :
+         console.log("setembro")
+    break;
+      case 10 :
+         console.log("outubro")
+    break;
+      case 11 :
+         console.log("novembro")
+    break;
+      case 12 :
+         console.log("dezembro")
+    break;
+    default: 
+    console.log("mes invalido")
+ }
+ 21)
+ let dia = prompt("digite a letra inicial do seu turno")
+ switch(dia){
+     case "M" :
+      console.log("bom dia")
+    break;
+     case "V" :
+     console.log("boa tarde")
+    break;
+      case "N" :
+     console.log("boa noite")
+    break;
+      
+    default: 
+    console.log("valor invalido")
+ }
