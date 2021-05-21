@@ -1,0 +1,63 @@
+        "use strict"
+        // 1
+         function ehPositivo(numero){
+             return numero > 0 
+         }
+
+         let numero = +prompt("digite um numero")
+         console.log(ehPositivo(numero))
+
+        // 2
+        function minimo(a, b) {
+            if (a < b) {
+                return a 
+            }
+            return b
+        }
+
+        let numero1 = +prompt('digite o numero 1')
+        let numero2 = +prompt('digite o numero 2')
+        console.log(minimo(numero1, numero2))
+        
+        //3
+        function potencia(a, b) { 
+         if (a** b){
+             return a** b
+         }
+      }
+        let numero1 = +prompt('digite o numero 1')
+        let numero2 = +prompt('digite o numero 2')
+        console.log(potencia(numero1, numero2))
+
+        //4
+         "use strict"
+        function media(a, b, c) { 
+             return ((a + b + c)/3)
+         }
+        let numero1 = +prompt('digite o numero 1')
+        let numero2 = +prompt('digite o numero 2')
+        let numero3 = +prompt('digite o numero 3')
+        console.log(media(numero1, numero2, numero3))
+        
+        //5
+         function obtemMedia(media){
+        if (media >= 0.0 && media <= 4.9){
+              return "d"
+          }
+        if (media >= 5.0 && media <= 6.9){
+              return "c"
+         } 
+        if (media >= 7.0 && media <= 8.9){
+              return "b"
+        } 
+        if (media >= 9.0 && media <= 10.0){
+              return "a"
+        }  
+        }   
+      let media = +prompt("digite a media do aluno")
+      console.log(obtemMedia(media))
+
+      6//
+     
+
+        

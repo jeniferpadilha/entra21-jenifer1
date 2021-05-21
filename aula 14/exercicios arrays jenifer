@@ -1,7 +1,7 @@
 1) 
  let numero = []
  let contadorPares = 0
-for (let i = 0; i < 10; i++){
+ for (let i = 0; i < 10; i++){
     numero[i] = +prompt("digite um numero")
     if (numero[i] % 2 === 0) {
     contadorPares++
@@ -14,13 +14,13 @@ let numero = []
 let maior
 let posicao = 0
 for(let i = 0; i < 5; i++){
-    numero[i] = +prompt("digite um numero")
-    if (i === 0){
-        maior = numero[i]
-    } else if (numero[i] > maior) {
-        maior = numero[i]
-        posicao = i  
-    }
+numero[i] = +prompt("digite um numero")
+  if (i === 0){
+    maior = numero[i]
+}  else if (numero[i] > maior) {
+    maior = numero[i]
+     posicao = i  
+            }
 }
 for (let i = 0; i < 5; i++) {
     console.log(numero[i])
@@ -29,4 +29,32 @@ for (let i = 0; i < 5; i++) {
 console.log(`Maior: ${maior}\nPosição: ${posicao}`) 
 
 3)
-    
+let numero = []
+let maior 
+let menor = 0
+ for(let i = 0; i < 5; i++){
+ numero[i] = +prompt("digite um numero")
+ if (i === 0){
+    menor = numero[i]
+    maior = numero[i]
+} else if (numero[i] > maior) {
+    maior = numero[i]
+} else if (numero[i] < menor) {
+    menor = numero[i]
+}
+}
+for (let i = 0; i < 5; i++) {
+    console.log(numero[i])
+}
+console.log(`maior:${maior}\nmenor:${menor}`)
+
+4)
+let vetor = []
+let vetorInverso = []
+for (let i = 0; i < 5; i++) {
+	 vetor[i] = +prompt("digite um numero")
+	 vetorInverso.unshift(vetor[i])
+}
+  console.log(`Vetor: ${vetor}\nVetor Inverso: ${vetorInverso}`)
+  
+  5)
